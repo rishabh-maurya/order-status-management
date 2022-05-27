@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Status</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1>Order Status Management</h1>
+    <div class="container">
+        <input type="text" placeholder="Plese enter Order ID" id="order-id-input">
+        <button onclick="excuteOrder(() => {
+            console.log('The order is ready and handed over to the Zomato guy!')
+        })">EXECUTE</button>
+        <h2 id="order-id-info"></h2>
+
+        <div class="status-blocks" id="order-placed">
+            Order Placed
+        </div>
+
+        <div class="status-blocks" id="chef-received">
+            Chef received the order and started preparing.
+        </div>
+
+        <div class="status-blocks" id="pizza-sauce">
+            Pizza sauce added!
+        </div>
+
+        <div class="status-blocks" id="first-cheeze">
+            First layer of cheeze added.
+        </div>
+
+        <div class="status-blocks" id="toppings-added">
+            Toppings added
+        </div>
+
+        <div class="status-blocks" id="second-cheeze">
+            Second layer of cheese added
+        </div>
+
+        <div class="status-blocks" id="pizza-baked">
+            pizza baked
+        </div>
+
+        <div class="status-blocks" id="oregano-added">
+            Oregano added and packed
+        </div>
+
+        <div class="status-blocks" id="package-handoverd">
+            Package received at counter department!
+        </div>
+    </div>
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
